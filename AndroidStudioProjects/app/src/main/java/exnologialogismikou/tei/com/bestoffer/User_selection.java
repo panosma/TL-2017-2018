@@ -9,6 +9,8 @@ import android.widget.Button;
 public class User_selection extends AppCompatActivity {
 
     Button simple_user;
+    Button exist_user;
+    Button sign_up;
 
 
     @Override
@@ -17,6 +19,8 @@ public class User_selection extends AppCompatActivity {
         setContentView(R.layout.activity_user_selection);
 
         simple_user = findViewById(R.id.simple_user);
+        sign_up = findViewById(R.id.sign_up);
+        exist_user = findViewById(R.id.exist_user);
     }
 
 
@@ -27,6 +31,20 @@ public class User_selection extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(User_selection.this,Home_screen.class));
+            }
+        });
+
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(User_selection.this,Sign_upActivity.class));
+            }
+        });
+
+        exist_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(User_selection.this,LoginActivity.class));
             }
         });
     }
