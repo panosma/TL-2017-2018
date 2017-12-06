@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="exnologialogismikou.tei.com.bestoffer.User_selection"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView_continue_as"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Continue as.."
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/exist_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exist_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Existing User"
+        app:layout_constraintBottom_toTopOf="@+id/simple_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_continue_as" />
+
+    <Button
+        android:id="@+id/simple_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:text="Simple User"
+        app:layout_constraintBottom_toTopOf="@+id/textView_have_account"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exist_user" />
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_have_account" />
+
+    <TextView
+        android:id="@+id/textView_have_account"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:text="Don't have an account?"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simple_user" />
+</android.support.constraint.ConstraintLayout>
